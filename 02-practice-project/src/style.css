@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: #1E1D1E;
+}
+
+.login-container {
+  background: #FFFFFF;
+  border-radius: 1rem;
+  width: 50rem;
+  max-width: 95%;
+  margin: 2rem auto;
+}
+
+.login {
+  padding: 1.5rem;
+}
+
+.login label {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.login label:first-child {
+  margin-top: 0;
+}
+
+.login input {
+  width: 100%;
+  font-size: 1.25rem;
+  margin: .75rem 0;
+}
+
+.button {
+  display: block;
+  background: #4C0B56;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  border: none;
+  padding: .5rem 1rem;
+  margin-top: .75rem;
+  cursor: pointer;
+}
+
+.user-list {
+  list-style: none;
+  padding: 2rem;
+}
+
+.user-list li {
+  border: 1px solid #CCCCCC;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: .5rem;
+  margin-top: .75rem;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: 10%;
+  width: 80%;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.header {
+  background: #4f005f;
+  padding: 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
