@@ -8,8 +8,7 @@
   ],
   "rules": {
     "react/prop-types": 0,
-    "react/react-in-jsx-scope": 0,
-    "react/display-name": ["disabled", { "ignoreTranspilerName": false }]
+    "react/react-in-jsx-scope": 0
   },
   "plugins": ["react", "import", "jsx-a11y"],
   "parserOptions": {
